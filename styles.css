@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  background-image: url(./assets/Personal\ Linktree.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #1a1a1a;
+  background-size: 100% 100%;
+}
+
+.main_container {
+  padding-top: 50px;
+  display: inline-block;
+  text-align: center;
+  margin: auto;
+  max-width: 40%;
+}
+
+i {
+  padding: 0;
+  margin: 0;
+  /* flex-direction: column; */
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline;
+  /* padding: 10px 200px; */
+  font-size: 20px;
+  /* border: 2px solid white; */
+  /* border-radius: 20px; */
+  /* margin: 6px; */
+}
+.main_container h1 {
+  font-family: "Signika", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.profile {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 8px rgb(213, 198, 198));
+  margin: 40px auto 20px;
+}
+.main_container p {
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  padding-bottom: 5px;
+  padding-top: 15px;
+}
+.links a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  width: auto;
+  margin: 30px auto;
+  display: block;
+  /* flex-direction: column; */
+  font-family: "Signika", sans-serif;
+  font-weight: 400;
+  /* justify-content: space-between; */
+}
+.a_tag {
+  font-family: "Signika", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.links :hover {
+  /* background: #ffffff; */
+  opacity: 0.9;
+  box-shadow: inset 0px 0px 20px #16a0cc;
+  filter: drop-shadow(0px 0px 20px #16a0cc);
+  cursor: pointer;
+}
+.links_content {
+  border: 2px solid white;
+  padding: 1em;
+  border-radius: 30px;
+  margin: 0.75em;
+  font-weight: bold;
+}
+.links_content:hover .fa-github,
+.llinks_content:hover .fa-linkedin,
+.links_content:hover .fa-instagram,
+.links_content:hover {
+  color: black;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2em;
+}
+footer p {
+  font-family: "Dosis", sans-serif;
+  color: grey;
+  font-size: 12px;
+}
+
+@media (max-width: 630px) {
+  .main_container {
+    max-width: 40%;
+    padding-top: 15px;
+  }
+  .main_container h1 {
+    font-size: 20px;
+  }
+  .main_container p {
+    font-size: 12px;
+  }
+  .links {
+    margin-top: 10px;
+  }
+  .links_content {
+    margin: 10px 0;
+    padding: 1em 0.5em;
+  }
+  .a_tag {
+    font-size: 16px;
+  }
+  footer{
+    font-size: 8px;
+  }
+}
